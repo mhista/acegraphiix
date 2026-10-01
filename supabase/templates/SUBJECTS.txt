@@ -1,0 +1,7 @@
+# Subjects — paste into the Subject field of each Supabase template
+
+confirm-signup.html    Your Acegraphiix sign-in code: {{ .Token }}
+magic-link.html        Your Acegraphiix sign-in code: {{ .Token }}
+reset-password.html    Reset your Acegraphiix dashboard password
+invite.html            You've been invited to the Acegraphiix website dashboard
+change-email.html      Confirm your new email for the Acegraphiix dashboard

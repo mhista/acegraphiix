@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Confirm your email</title>
+</head>
+<body style="margin:0;padding:0;background:#fafafa;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;">Your code is {{ .Token }} — confirm your email to open the dashboard.</div>
+  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:#fafafa;">
+    <tr><td align="center" style="padding:40px 16px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px;background:#ffffff;border-radius:28px;border:1px solid #ececee;">
+        <tr><td style="padding:36px 40px 0;">
+          <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+            <td width="44" height="44" align="center" valign="middle" style="background:#09090b;border-radius:13px;font:700 20px/44px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#ffffff;">A</td>
+            <td style="padding-left:12px;">
+              <p style="margin:0;font:600 15px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#09090b;">Acegraphiix</p>
+              <p style="margin:2px 0 0;font:400 13px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#71717a;">Website manager</p>
+            </td>
+          </tr></table>
+        </td></tr>
+        <tr><td style="padding:28px 40px 0;">
+          <h1 style="margin:0;font:600 26px/1.15 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:-.03em;color:#09090b;">Confirm your email</h1>
+          <p style="margin:12px 0 24px;font:400 15px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#52525b;">You're signing in to the Acegraphiix website dashboard for the first time. Use this code to confirm it's you.</p>
+        </td></tr>
+        
+          <tr><td style="padding:0 40px;">
+            <p style="margin:0 0 10px;font:500 12px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#71717a;">Your code</p>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%"><tr>
+              <td align="center" style="background:#f4f4f5;border-radius:18px;padding:22px 12px;">
+                <span style="font:600 34px/1 'SFMono-Regular',Menlo,Consolas,monospace;letter-spacing:.32em;color:#09090b;">{{ .Token }}</span>
+              </td>
+            </tr></table>
+            <p style="margin:12px 0 0;font:400 13px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#71717a;">Type it on the sign-in screen. It expires in 1 hour and works once.</p>
+          </td></tr>
+          <tr><td style="padding:26px 40px 0;"><div style="height:1px;background:#e4e4e7;line-height:1px;font-size:0;">&nbsp;</div></td></tr>
+          <tr><td style="padding:22px 40px 0;"><p style="margin:0;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#52525b;">Or skip the code and use the button:</p></td></tr>
+        <tr><td style="padding:16px 40px 0;">
+          <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+            <td style="background:#09090b;border-radius:14px;">
+              <a href="{{ .SiteURL }}/auth/callback?token_hash={{ .TokenHash }}&type=email&next=/dashboard" style="display:inline-block;padding:14px 26px;font:600 14px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#ffffff;text-decoration:none;">Confirm and sign in &rarr;</a>
+            </td>
+          </tr></table>
+        </td></tr>
+        <tr><td style="padding:28px 40px 36px;">
+          <p style="margin:0;font:400 13px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#a1a1aa;">Didn't ask for this? You can ignore this email. Nobody can sign in without the code or link above.</p>
+          
+        </td></tr>
+      </table>
+      <p style="margin:20px 0 0;font:400 12px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#a1a1aa;">Sent by the Acegraphiix website &middot; Port Harcourt, Nigeria</p>
+    </td></tr>
+  </table>
+</body>
+</html>
